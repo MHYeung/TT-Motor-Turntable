@@ -9,7 +9,7 @@ This guide helps you build and flash the DIY Turntable firmware using **ESP-IDF*
 
 ---
 
-## 0 Prerequisites
+## 0) Prerequisites
 
 ### Hardware
 - An ESP32 board (example: ESP32-S3 / ESP32 / ESP32-C3 — **use the one your project supports**)
@@ -25,14 +25,15 @@ This guide helps you build and flash the DIY Turntable firmware using **ESP-IDF*
 
 ---
 
-## 1 Clone the Repo/ Download the .zip files
+## 1) Clone the Repo/ Download the .zip files
 
-## 2 You can get the CAD files inside the Hardware folder
+## 2) You can get the CAD files inside the Hardware folder
 ![Render of the model](./images/render.png)
+<img src="./images/render.png" alt="Demo" width="480">
 
-## 3 Go to "firmware" folder and open with ESP-IDF environment
+## 3) Go to "firmware" folder and open with ESP-IDF environment
 
-## 4 Connection Pinout (Example on XIAO ESP32C6 board, change accordingly to your board)
+## 4) Connection Pinout (Example on XIAO ESP32C6 board, change accordingly to your board)
 | Connection Type | TB6612FNG Pin | XIAO ESP32C3 Pin | Description |
 |---|---|---|---|
 | Power | VM   | 5V (or VBUS)   | Motor power (USB 5V example) |
@@ -45,29 +46,35 @@ This guide helps you build and flash the DIY Turntable firmware using **ESP-IDF*
 | Motor Output | AO1 | —         | Motor terminal 1 |
 | Motor Output | AO2 | —         | Motor terminal 2 |
 
-## 5 Run > 'idf.py menuconfig' and setup the WIFI and Driver pins 
+## 5) Run > 'idf.py menuconfig' and setup the WIFI and Driver pins 
+TT Motor Turntable config setup in ESP-IDF menuconfig
 ![TT Motor Turntable config setup in ESP-IDF menuconfig](./images/menuconfig_1.png)
-- TT Motor Turntable config setup in ESP-IDF menuconfig
+<img src="./images/menuconfig_1.png" alt="Demo" width="350">
+WIFI and Motor driver pin setup
 ![WIFI and Motor driver pin setup](./images/menuconfig_2.png)
-- WIFI and Motor driver pin setup
+<img src="./images/menuconfig_2.png" alt="Demo" width="350">
+Replace with your WIFI credentials
 ![Replace with your WIFI credentials](./images/menuconfig_3.png)
-- Replace with your WIFI credentials
+<img src="./images/menuconfig_3.png" alt="Demo" width="350">
+Replace with your driver pin to your esp boards
 ![Replace with your driver pin to your esp boards](./images/menuconfig_4.png)
-- Replace with your driver pin to your esp boards
-## 6 Run the following commands to build and flash the program
+<img src="./images/menuconfig_4.png" alt="Demo" width="350">
+
+## 6) Run the following commands to build and flash the program
 
 > [!NOTE]
-> '''bash
+> ```bash
 > idf.py set-target esp32s3 (or your preferred board)
 > idf.py build
 > idf.py -p COMx flash monitor  # Windows: COMx |macOS/Linux: /dev/ttyUSB0
->'''
+>```
 
-## 7 Check the Debug Console to see the Webdashboard Address
+## 7 Check the Debug Console to see the Web Dashboard Address
 
 ## 8 Done! Your TT Motor Turntable is ready!
-- Open web dashboard to control your turntable!
+Open web dashboard to control your turntable!
 ![Open web dashboard to control the motor](./images/web_dashboard.jpg)
+<img src="doc/images/web_dashboard.jpg" alt="Web Dashboard" width="520">
 
 
 
