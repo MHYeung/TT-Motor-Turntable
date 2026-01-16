@@ -1,7 +1,9 @@
 # TT Motor Turntable (ESP32 + 3D Printed)
 
-![TT Motor Turntable Thumbnail](doc/images/thumbnail.GIF)
-<img src="doc/images/thumbnail.GIF" alt="TT Motor Turntable Thumbnail" width="600">
+<p align="center">
+  <img src="doc/images/thumbnail.GIF" alt="TT Motor Turntable thumbnail" width="520">
+</p>
+
 
 A compact DIY turntable powered by a TT geared motor, a TB6612FNG motor driver and an ESP32 board, with 3D-printable parts and a simple web dashboard for control.
 
@@ -26,14 +28,24 @@ That guide covers:
 
 ## Photos / Demos
 Control the turntable via the WebDashboard!
-![Web Dashboard](doc/images/web_dashboard.jpg)
-<img src="doc/images/web_dashboard.jpg" alt="Web Dashboard" width="520">
+<p align="center">
+  <img src="./images/web_dashboard.jpg" alt="WIFI and Driver Pins" width="400">
+</p>
+
+Displaying a mouse!
+<p align="center">
+  <img src="doc/images/demo.GIF" alt="Demo" width="520">
+</p>
+
 
 ## Hardware
 - STL files: `hardware`
 - CAD files: `hardware/cad`
 
-![Dimensions](doc/images/drawing.png)
+<p align="center">
+  <img src="doc/images/drawing.png" alt="Drawing" width="520">
+</p>
+
 
 
 ## Documentation

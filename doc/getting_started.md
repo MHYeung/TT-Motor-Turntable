@@ -28,8 +28,9 @@ This guide helps you build and flash the DIY Turntable firmware using **ESP-IDF*
 ## 1) Clone the Repo/ Download the .zip files
 
 ## 2) You can get the CAD files inside the Hardware folder
-![Render of the model](./images/render.png)
-<img src="./images/render.png" alt="Demo" width="480">
+<p align="center">
+  <img src="./images/render.png" alt="Render" width="520">
+</p>
 
 ## 3) Go to "firmware" folder and open with ESP-IDF environment
 
@@ -48,17 +49,21 @@ This guide helps you build and flash the DIY Turntable firmware using **ESP-IDF*
 
 ## 5) Run > 'idf.py menuconfig' and setup the WIFI and Driver pins 
 TT Motor Turntable config setup in ESP-IDF menuconfig
-![TT Motor Turntable config setup in ESP-IDF menuconfig](./images/menuconfig_1.png)
-<img src="./images/menuconfig_1.png" alt="Demo" width="350">
+<p align="center">
+  <img src="./images/menuconfig_1.png" alt="Turntable config" width="480">
+</p>
 WIFI and Motor driver pin setup
-![WIFI and Motor driver pin setup](./images/menuconfig_2.png)
-<img src="./images/menuconfig_2.png" alt="Demo" width="350">
+<p align="center">
+  <img src="./images/menuconfig_2.png" alt="WIFI and Driver Pins" width="480">
+</p>
 Replace with your WIFI credentials
-![Replace with your WIFI credentials](./images/menuconfig_3.png)
-<img src="./images/menuconfig_3.png" alt="Demo" width="350">
+<p align="center">
+  <img src="./images/menuconfig_3.png" alt="WIFI Credentials" width="480">
+</p>
 Replace with your driver pin to your esp boards
-![Replace with your driver pin to your esp boards](./images/menuconfig_4.png)
-<img src="./images/menuconfig_4.png" alt="Demo" width="350">
+<p align="center">
+  <img src="./images/menuconfig_4.png" alt="Driver Pin" width="480">
+</p>
 
 ## 6) Run the following commands to build and flash the program
 
@@ -73,8 +78,9 @@ Replace with your driver pin to your esp boards
 
 ## 8 Done! Your TT Motor Turntable is ready!
 Open web dashboard to control your turntable!
-![Open web dashboard to control the motor](./images/web_dashboard.jpg)
-<img src="doc/images/web_dashboard.jpg" alt="Web Dashboard" width="520">
+<p align="center">
+  <img src="./images/web_dashboard.jpg" alt="WIFI and Driver Pins" width="400">
+</p>
 
 
 
