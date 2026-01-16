@@ -29,7 +29,7 @@ That guide covers:
 ## Photos / Demos
 Control the turntable via the WebDashboard!
 <p align="center">
-  <img src="./images/web_dashboard.jpg" alt="WIFI and Driver Pins" width="400">
+  <img src="doc/images/web_dashboard.jpg" alt="WIFI and Driver Pins" width="380">
 </p>
 
 Displaying a mouse!
@@ -45,11 +45,6 @@ Displaying a mouse!
 <p align="center">
   <img src="doc/images/drawing.png" alt="Drawing" width="520">
 </p>
-
-
-
-## Documentation
-- Getting started: [doc/getting_started.md](doc/getting_started.md)
 
 ## License
 See [LICENSE](LICENSE).
