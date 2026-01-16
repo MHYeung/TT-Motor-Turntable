@@ -1,0 +1,63 @@
+########################################
+# ESP-IDF / CMake / Ninja build outputs
+########################################
+
+# Any build folders anywhere (covers test/firmware/diy_turntable/build etc.)
+**/build/
+**/build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/compile_commands.json
+**/ninja_*.log
+**/rules.ninja
+**/build.ninja
+
+# ESP-IDF generated config (keep sdkconfig.defaults tracked)
+test/firmware/**/sdkconfig
+test/firmware/**/sdkconfig.old
+
+# Component manager outputs
+test/firmware/**/managed_components/
+test/firmware/**/dependencies.lock
+
+# ESP-IDF python state/cache
+test/firmware/**/.idf.py
+
+########################################
+# Python / caches
+########################################
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+########################################
+# OS / IDE junk
+########################################
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+
+########################################
+# Logs / temp
+########################################
+*.log
+*.tmp
+*.bak
+*~
+~$*
+
+########################################
+# CAD tool temp/backup (keeps .stp tracked)
+########################################
+**/*.~*
+**/*.autosave
+**/*.backup
+**/*_backup.*
+**/*.lck
+**/*.lock

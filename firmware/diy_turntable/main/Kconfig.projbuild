@@ -1,0 +1,65 @@
+menu "TT Motor Turntable"
+
+menu "Wi-Fi Config"
+config WIFI_SSID
+    string "WiFi SSID"
+    default ""
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default ""
+endmenu
+
+menu "TB6612FNG Motor Driver (Channel A)"
+
+config TB6612_AIN1_GPIO
+    int "AIN1 GPIO"
+    range 0 48
+    default 4
+
+config TB6612_AIN2_GPIO
+    int "AIN2 GPIO"
+    range 0 48
+    default 5
+
+config TB6612_STBY_GPIO
+    int "STBY GPIO"
+    range 0 48
+    default 6
+
+config TB6612_PWMA_GPIO
+    int "PWMA (PWM) GPIO"
+    range 0 48
+    default 7
+
+config TB6612_PWM_FREQ_HZ
+    int "PWM frequency (Hz)"
+    range 100 50000
+    default 25000
+
+choice
+    prompt "LEDC timer"
+    default TB6612_LEDC_TIMER_0
+config TB6612_LEDC_TIMER_0
+    bool "LEDC_TIMER_0"
+config TB6612_LEDC_TIMER_1
+    bool "LEDC_TIMER_1"
+config TB6612_LEDC_TIMER_2
+    bool "LEDC_TIMER_2"
+endchoice
+
+choice
+    prompt "LEDC channel"
+    default TB6612_LEDC_CHANNEL_0
+config TB6612_LEDC_CHANNEL_0
+    bool "LEDC_CHANNEL_0"
+config TB6612_LEDC_CHANNEL_1
+    bool "LEDC_CHANNEL_1"
+config TB6612_LEDC_CHANNEL_2
+    bool "LEDC_CHANNEL_2"
+config TB6612_LEDC_CHANNEL_3
+    bool "LEDC_CHANNEL_3"
+endchoice
+
+endmenu
+
+endmenu

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIY Turntable</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1>DIY Turntable</h1>
+        <p class="sub">ESP32-C6 · TB6612 · Web Dashboard</p>
+      </div>
+      <div class="badge" id="connBadge">Connecting…</div>
+    </header>
+
+    <section class="card">
+      <div class="row space">
+        <div class="metric">
+          <div class="label">Direction</div>
+          <div class="value" id="dirText">STOP</div>
+        </div>
+        <div class="metric right">
+          <div class="label">Speed</div>
+          <div class="value"><span id="spdText">0</span><span class="unit">%</span></div>
+        </div>
+      </div>
+
+      <div class="sliderBlock">
+        <input id="speed" type="range" min="0" max="100" value="0" />
+        <div class="ticks">
+          <span>0</span><span>25</span><span>50</span><span>75</span><span>100</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="revBtn">Reverse</button>
+        <button class="btn danger" id="stopBtn">Stop</button>
+        <button class="btn" id="fwdBtn">Forward</button>
+      </div>
+
+      <div class="controls small">
+        <button class="btn ghost" id="minusBtn">-5%</button>
+        <button class="btn ghost" id="plusBtn">+5%</button>
+      </div>
+
+      <div class="footer">
+        <div class="hint">Tip: drag the slider, then release — it will send an update (debounced).</div>
+        <div class="status" id="statusText">—</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Quick Actions</h2>
+      <div class="controls">
+        <button class="btn ghost" id="btn10">10%</button>
+        <button class="btn ghost" id="btn30">30%</button>
+        <button class="btn ghost" id="btn50">50%</button>
+        <button class="btn ghost" id="btn80">80%</button>
+      </div>
+
+      <div class="controls small">
+        <button class="btn ghost" id="refreshBtn">Refresh State</button>
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <span>API: <code>/api/motor?dir=1&speed=50</code></span>
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
